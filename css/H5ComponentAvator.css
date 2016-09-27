@@ -1,0 +1,44 @@
+.h5_component_avator {
+}
+
+.h5_component_avator .before {
+    box-sizing: border-box;
+    border: 5px solid black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    border-radius: 50%;
+    background-color: salmon;
+    background-size: 100%;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    transform-origin: 10% 50%;
+    -webkit-transform-origin: 10% 50%;
+    transition: transform 1s;
+    -webkit-transition: all 1s;
+}
+
+.h5_component_avator .back {
+    box-sizing: border-box;
+    border: 5px solid black;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: salmon;
+}
+.h5_component_avator .ding {
+    background-color: black;
+    width: 6.67%;
+    height: 6.67%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    left: 6.66%;
+    top: 0; bottom: 0;
+    margin: auto;
+}

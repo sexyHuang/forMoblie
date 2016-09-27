@@ -1,0 +1,31 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1474981622'); /* IE9*/
+  src: url('iconfont.eot?t=1474981622#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1474981622') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1474981622') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1474981622#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-download:before { content: "\e60b"; }
+.icon-more:before { content: "\e608"; }
+.icon-location:before { content: "\e603"; }
+.icon-tel:before { content: "\e60c"; }
+.icon-tip:before { content: "\e602"; }
+.icon-github:before { content: "\e609"; }
+.icon-ui:before { content: "\e604"; }
+.icon-mail:before { content: "\e60d"; }
+.icon-page:before { content: "\e605"; }
+.icon-unstack:before { content: "\e60a"; }
+.icon-name:before { content: "\e600"; }
+.icon-left:before { content: "\e606"; }
+.icon-right:before { content: "\e607"; }
+.icon-back-top:before { content: "\e60e"; }

@@ -1,0 +1,40 @@
+/*环图组件样式*/
+.h5_component_ring {
+    font-family: "Microsoft YaHei";
+}
+
+.h5_component_ring canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.h5_component_ring .text {
+    text-align: center;
+    position: absolute;
+    font-size: 12px;
+    line-height: 15px;
+   -webkit-opacity: 0;
+    opacity: 0;
+    transition:all 0.5s;
+    -moz-transition:all 0.5s ; /* Firefox 4 */
+    -webkit-transition:all 0.5s; /* Safari and Chrome */
+    -o-transition:all 0.5s;
+    width: 100%;
+    top: 50%;
+    margin-top: -12px;
+    height: 30px;
+}
+
+.h5_component_ring .mark {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    z-index: 99;
+    background-color: white;
+    border-radius: 50%;
+    left: 10%;
+    top: 10%;
+}

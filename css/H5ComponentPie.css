@@ -1,0 +1,27 @@
+/*饼图组件样式*/
+.h5_component_pie {
+    font-family: "Microsoft YaHei";
+}
+
+.h5_component_pie canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.h5_component_pie .text {
+    text-align: center;
+    position: absolute;
+    font-size: 12px;
+    white-space: nowrap;
+   -webkit-opacity: 0;
+    opacity: 0;
+    transition:all 1s;
+    -moz-transition:all 1s ; /* Firefox 4 */
+    -webkit-transition:all 1s; /* Safari and Chrome */
+    -o-transition:all 1s;
+    z-index: 99;
+    height: 24px;
+}

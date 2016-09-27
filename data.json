@@ -1,0 +1,1138 @@
+{
+  "imgs": ["img/avator.png","img/avator_icon.png","img/caption.png","img/face_img_left.png","img/face_img_right.png","img/footer_logo.png","img/guangdong.png","img/html_pages.png","img/jnu_logo.png","img/page_bg.png","img/slide_up.png","img/sortAnimate.png","img/target_bg.png","img/ui.png"],
+  "whenAddPage": [
+    {
+      "name": "mb",
+      "cfg": {
+        "bg": "rgb(91,53,32)",
+        "css": {
+          "zIndex": 1,
+          "width": "100%",
+          "height": "100%"
+        },
+        "animateIn": {
+          "opacity": 0.2
+        },
+        "animateOut": {
+          "opacity": 1
+        }
+      }
+    },
+    {
+      "name": "footer",
+      "cfg": {
+        "bg": "rgba(121,121,121,.5)",
+        "height": 39,
+        "css": {
+          "width": "100%",
+          "bottom": -30,
+          "opacity": 0,
+          "zIndex": 10,
+          "fontSize": 0
+        },
+        "animateIn": {
+          "opacity": 1,
+          "bottom": 0
+        },
+        "animateOut": {
+          "opacity": 0,
+          "bottom": -30
+        },
+        "delay": 500
+      }
+    },
+    {
+      "name": "footer_logo",
+      "cfg": {
+        "bg": "img/footer_logo.png",
+        "width": 100,
+        "height": 22,
+        "css": {
+          "bottom": -30,
+          "left": 13,
+          "zIndex": 99,
+          "opacity": 0
+        },
+        "animateIn": {
+          "opacity": 1,
+          "bottom": 3
+        },
+        "animateOut": {
+          "opacity": 0,
+          "bottom": -30
+        },
+        "delay": 500
+      }
+    },
+    {
+      "name": "slide_up",
+      "cfg": {
+        "bg": "img/slide_up.png",
+        "width": 99,
+        "height": 20,
+        "css": {
+          "bottom": -30,
+          "right": 13,
+          "zIndex": 99,
+          "opacity": 0
+        },
+        "animateIn": {
+          "opacity": 1,
+          "bottom": 4
+        },
+        "animateOut": {
+          "opacity": 0,
+          "bottom": -30
+        },
+        "delay": 500
+      }
+    }
+  ],
+  "addThings": [
+    {
+      "isPage": true,
+      "name": "face"
+    },
+    {
+      "isPage": false,
+      "name": "myAvator",
+      "cfg": {
+        "type": "avator",
+        "width": 300,
+        "height": 300,
+        "bg": "#30A7AB",
+        "aPhoto": "img/avator.png",
+        "aIcon": "img/avator_icon.png",
+        "center": true,
+        "css": {
+          "zIndex": 4,
+          "top": 220,
+          "opacity": 0
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "isPage": false,
+      "name": "click_tip",
+      "cfg": {
+        "text": "点我一下看看",
+        "width": 200,
+        "height": 50,
+        "bg": "#6482ff",
+        "center": true,
+        "css": {
+          "padding": "5px",
+          "border-radius": "5px",
+          "color": "white",
+          "textAlign": "center",
+          "opacity": 0,
+          "top": 255,
+          "zIndex": 5
+        },
+        "animateIn": {
+          "top": 240,
+          "opacity": 0.8
+        },
+        "animateOut": {
+          "top": 255,
+          "opacity": 0
+        },
+        "delay": 2000
+      }
+    },
+    {
+      "isPage": false,
+      "name": "myName",
+      "cfg": {
+        "html": "<i class='iconfont icon-name'> </i>",
+        "text": "黄建雍",
+        "center": true,
+        "width": 190,
+        "height": 48,
+        "css": {
+          "zIndex": 1,
+          "box-sizing": "border-box",
+          "color": "white",
+          "border-radius": "15px",
+          "top": 385,
+          "backgroundColor": "salmon",
+          "border": "2px solid black",
+          "lineHeight": "20px",
+          "fontSize": 15,
+          "padding-left": 10,
+          "opacity": 0
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "isPage": false,
+      "name": "myTarget",
+      "cfg": {
+        "text": "前端开发工程师",
+        "center": true,
+        "width": 600,
+        "height": 150,
+        "bg": "img/target_bg.png",
+        "css": {
+          "box-sizing": "border-box",
+          "color": "black",
+          "font-weight": "bolder",
+          "border-radius": "15px",
+          "top": 30,
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "100%",
+          "lineHeight": "50px",
+          "textAlign": "center",
+          "fontSize": 22,
+          "opacity": 0,
+          "zIndex": 2
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "isPage": false,
+      "name": "tip",
+      "cfg": {
+        "html": "<i class='iconfont icon-tip'> 新司机</i>",
+        "text": "",
+        "center": true,
+        "width": 300,
+        "css": {
+          "overflow": "hidden",
+          "box-sizing": "border-box",
+          "color": "white",
+          "border-radius": "15px",
+          "top": 43,
+          "backgroundColor": "salmon",
+          "lineHeight": "20px",
+          "fontSize": 15,
+          "textAlign": "center",
+          "opacity": 1,
+          "zIndex": 1
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "isPage": false,
+      "name": "nav",
+      "cfg": {
+        "type": "point_r",
+        "width": 100,
+        "height": 100,
+        "center": true,
+        "data": [
+          {
+            "name": "资料",
+            "per": 0.4,
+            "color": "#f68535",
+            "rotate": "-10",
+            "zIndex": "2"
+          },
+          {
+            "name": "技能",
+            "per": 0.4,
+            "rotate": "40",
+            "color": "rgb(153, 193, 255)"
+          },
+          {
+            "name": "作品",
+            "per": 0.4,
+            "color": "#e8d89d",
+            "rotate": "90"
+          },
+          {
+            "name": "爱好",
+            "per": 0.4,
+            "color": "#60bda2",
+            "rotate": "140"
+          },
+          {
+            "name": "联系",
+            "per": 0.4,
+            "color": "#d23c4c",
+            "rotate": "190"
+          }
+        ],
+        "css": {
+          "top": 260,
+          "opacity": 0,
+          "fontSize": "15px"
+        },
+        "animateIn": {
+          "opacity": 1,
+          "zIndex": 3
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 1500
+      }
+    },
+    {
+      "isPage": false,
+      "name": "face_img_left",
+      "cfg": {
+        "width": 345,
+        "height": 493,
+        "bg": "img/face_img_left.png",
+        "css": {
+          "opacity": 0,
+          "left": -50,
+          "bottom": -50,
+          "zIndex": 0
+        },
+        "animateIn": {
+          "opacity": 1,
+          "left": 0,
+          "bottom": 0
+        },
+        "animateOut": {
+          "opacity": 0,
+          "left": -50,
+          "bottom": -50
+        },
+        "delay": 1000
+      }
+    },
+    {
+      "isPage": false,
+      "name": "face_img_right",
+      "cfg": {
+        "width": 324,
+        "height": 449,
+        "bg": "img/face_img_right.png",
+        "css": {
+          "opacity": 0,
+          "right": -50,
+          "bottom": -50,
+          "zIndex": 0
+        },
+        "animateIn": {
+          "opacity": 1,
+          "right": 0,
+          "bottom": 0
+        },
+        "animateOut": {
+          "opacity": 0,
+          "right": -50,
+          "bottom": -50
+        },
+        "delay": 1000
+      }
+    },
+    {
+      "isPage": true,
+      "name": "char"
+    },
+    {
+      "isPage": false,
+      "name": "caption",
+      "cfg": {
+        "text": "个人资料",
+        "width": 500,
+        "height": 140,
+        "center": true,
+        "css": {
+          "top": 20,
+          "opacity": 0,
+          "z-index": 2
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 500
+      }
+    },
+    {
+      "isPage": false,
+      "name": "meIcon",
+      "cfg": {
+        "width": 300,
+        "height": 300,
+        "bg": "img/avator_icon.png",
+        "center": true,
+        "css": {
+          "backgroundColor": "#30A7AB",
+          "border": "5px solid black",
+          "top": 500,
+          "opacity": 0
+        },
+        "animateIn": {
+          "top": 455,
+          "opacity": 1,
+          "marginLeft": "-143px",
+          "width": 80,
+          "height": 80
+        },
+        "animateOut": {
+          "opacity": 0,
+          "top": 500
+        },
+        "delay": 500
+      }
+    },
+    {
+      "isPage": false,
+      "name": "text",
+      "cfg": {
+        "width": 400,
+        "height": 300,
+        "center": true,
+        "html": "<div><span class='label'>姓名:</span> 黄建雍</div><div><span class='label'>性别:</span> 男</div><div><span class='label'>出生日期:</span> 1994.04</div>",
+        "text": "",
+        "css": {
+          "backgroundColor": "#F7CF94",
+          "border": "5px solid black",
+          "top": 500,
+          "opacity": 0
+        },
+        "animateIn": {
+          "top": 455,
+          "opacity": 1,
+          "marginLeft": "-57px",
+          "height": 90
+        },
+        "animateOut": {
+          "opacity": 0,
+          "top": 500
+        },
+        "delay": 500
+      }
+    },
+    {
+      "isPage": false,
+      "name": "else_left",
+      "cfg": {
+        "width": 570,
+        "height": 240,
+        "center": true,
+        "html": "<span class='big'>毕业于：</span><span class='school'>暨南大学</span><div>16届物联网工程</div>",
+        "text": "",
+        "css": {
+          "backgroundColor": "#e8cb5f",
+          "top": 350,
+          "opacity": 0,
+          "zIndex": 3
+        },
+        "animateIn": {
+          "top": 313,
+          "opacity": 1,
+          "marginLeft": "-130px"
+        },
+        "animateOut": {
+          "opacity": 0,
+          "top": 350
+        },
+        "delay": 1000
+      }
+    },
+    {
+      "isPage": false,
+      "name": "else_right",
+      "cfg": {
+        "width": 570,
+        "height": 352,
+        "center": true,
+        "html": "<div class='job'><span class='big'>意向职位：</span><span class='school'>前端开发工程师</span></div><span class='big'>期望坐标：</span><div class='pos'><span class='place'>广&nbsp;东</span></div>",
+        "text": "",
+        "css": {
+          "backgroundColor": "#99C0FF",
+          "top": 130,
+          "opacity": 0
+        },
+        "animateIn": {
+          "top": 93,
+          "opacity": 1,
+          "marginLeft": "-148px"
+        },
+        "animateOut": {
+          "opacity": 0,
+          "top": 130
+        },
+        "delay": 4000
+      }
+    },
+    {
+      "isPage": true,
+      "name": "edu"
+    },
+    {
+      "isPage": false,
+      "name": "caption",
+      "cfg": {
+        "text": "专业技能",
+        "width": 500,
+        "height": 140,
+        "center": true,
+        "css": {
+          "top": 20,
+          "opacity": 0,
+          "z-index": 2
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 500
+      }
+    },
+    {
+      "isPage": false,
+      "name": "h2",
+      "cfg": {
+        "width": 240,
+        "height": 80,
+        "text": "能力分布",
+        "center": true,
+        "css": {
+          "color": "white",
+          "top": 175,
+          "zIndex": 3,
+          "fontSize": "27px",
+          "opacity": "0",
+          "backgroundColor": "rgba(55,55,55,0)",
+          "padding": "0 5px",
+          "box-sizing": "border-box",
+          "border-radius": "10px"
+        },
+        "animateIn": {
+          "opacity": "1",
+          "backgroundColor": "rgba(55,55,55,0.2)"
+        },
+        "animateOut": {
+          "opacity": "0"
+        },
+        "delay": 1000
+      }
+    },
+    {
+      "isPage": false,
+      "name": "pie",
+      "cfg": {
+        "type": "pie",
+        "width": 340,
+        "height": 340,
+        "data": [
+          {
+            "name": "前端能力",
+            "per": 0.6,
+            "color": "#ff7676"
+          },
+          {
+            "name": "素材处理能力",
+            "per": 0.2,
+            "color": "#5ddbd8"
+          },
+          {
+            "name": "后端能力",
+            "per": 0.1,
+            "color": "#99c1ff"
+          },
+          {
+            "name": "其他能力",
+            "per": 0.1,
+            "color": "#ffad69"
+          }
+        ],
+        "css": {
+          "top": 60,
+          "opacity": 0
+        },
+        "animateIn": {
+          "opacity": 1,
+          "top": 106
+        },
+        "animateOut": {
+          "opacity": 0,
+          "top": 60
+        },
+        "delay": 1500,
+        "center": true
+      }
+    },
+    {
+      "isPage": false,
+      "name": "h2",
+      "cfg": {
+        "width": 240,
+        "height": 80,
+        "text": "前端能力",
+        "css": {
+          "color": "rgba(255, 118, 118,0)",
+          "top": 205,
+          "zIndex": 3,
+          "fontSize": "12px",
+          "opacity": "0",
+          "backgroundColor": "rgba(55,55,55,0)",
+          "padding": "0 5px",
+          "box-sizing": "border-box",
+          "border-radius": "10px",
+          "left": "50%",
+          "marginLeft": "99px"
+        },
+        "animateIn": {
+          "opacity": "1",
+          "color": "rgba(255, 118, 118,1)",
+          "top": 335,
+          "fontSize": "27px",
+          "marginLeft": "-150px",
+          "backgroundColor": "rgba(55,55,55,0.2)"
+        },
+        "animateOut": {
+          "opacity": "0",
+          "marginLeft": "99px",
+          "top": 235,
+          "backgroundColor": "rgba(55,55,55,0)",
+          "color": "rgba(255, 118, 118,0)",
+          "fontSize": "12px"
+        },
+        "delay": 3000
+      }
+    },
+    {
+      "isPage": false,
+      "name": "radar",
+      "cfg": {
+        "type": "radar",
+        "width": 340,
+        "height": 340,
+        "data": [
+          {
+            "name": "JS",
+            "per": 0.8,
+            "color": "#ff7676"
+          },
+          {
+            "name": "HTML/CSS",
+            "per": 0.7
+          },
+          {
+            "name": "CSS3",
+            "per": 0.55
+          },
+          {
+            "name": "HTML5",
+            "per": 0.55
+          },
+          {
+            "name": "jQuery",
+            "per": 0.55
+          },
+          {
+            "name": "Bootstrap",
+            "per": 0.15
+          }
+        ],
+        "css": {
+          "top": 500,
+          "opacity": 0
+        },
+        "animateIn": {
+          "opacity": 1,
+          "top": 356
+        },
+        "animateOut": {
+          "opacity": 0,
+          "top": 500
+        },
+        "delay": 3500,
+        "center": true
+      }
+    },
+    {
+      "isPage": true,
+      "name": "skill"
+    },
+    {
+      "isPage": false,
+      "name": "caption",
+      "cfg": {
+        "text": "我的作品",
+        "width": 500,
+        "height": 140,
+        "center": true,
+        "css": {
+          "top": 20,
+          "opacity": 0,
+          "z-index": 2
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 500
+      }
+    },
+    {
+      "isPage": false,
+      "name": "desk",
+      "cfg": {
+        "css": {
+          "width": "100%",
+          "top": "30%"
+        }
+      }
+    },
+    {
+      "isPage": false,
+      "name": "work_box",
+      "cfg": {
+        "bg": "img/html_pages.png",
+        "html": "<div class='title'>纯HTML/CSS页面</div><a class='link' href='https://sexyhuang.github.io/HTML-CSSprojects/index.html'>点击进入导航页</a><p class='text'><span>工作:</span> <br>根据psd设计稿切图/页面编写</p>",
+        "text": "",
+        "css": {
+          "top": 0,
+          "width": "80%",
+          "height": 180,
+          "left": "10%",
+          "opacity": 0
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 1000
+      }
+    },
+    {
+      "isPage": false,
+      "name": "work_box",
+      "cfg": {
+        "bg": "img/ui.png",
+        "html": "<div class='title'>UI组件类</div><a class='link' href='https://sexyhuang.github.io/JSprojects/UI/'>点击查看Demo</a><p class='text'><span>工作:</span> <br>功能设计/功能实现/代码抽象化/功能接口实现/分离样式</p>",
+        "text": "",
+        "css": {
+          "width": "80%",
+          "height": 180,
+          "opacity": 0,
+          "left": "10%"
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 1000
+      }
+    },
+    {
+      "isPage": false,
+      "name": "work_box",
+      "cfg": {
+        "bg": "img/sortAnimate.png",
+        "html": "<div class='title'>排序算法可视化</div><a class='link' href='https://sexyhuang.github.io/JSprojects/sortAnimate/'>点击查看Demo</a><p class='text'><span>工作:</span> <br>算法可视化改写/代码抽象化</p>",
+        "text": "",
+        "css": {
+          "width": "80%",
+          "height": 180,
+          "opacity": 0,
+          "left": "10%",
+          "background-position": "10% 25%"
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 1000
+      }
+    },
+    {
+      "isPage": false,
+      "name": "work_box",
+      "cfg": {
+        "html": "<div class='title'>更多作品</div><p class='text'>去<br><a class='link' href='https://github.com/sexyHuang'>我的github</a><br>上查看更多作品</p>",
+        "text": "",
+        "css": {
+          "width": "80%",
+          "height": 180,
+          "opacity": 0,
+          "left": "10%"
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 1000
+      }
+    },
+    {
+      "isPage": false,
+      "name": "button",
+      "cfg": {
+        "text": "left",
+        "css": {
+          "height": 20,
+          "left": "20%",
+          "bottom": "10%",
+          "opacity": 0
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 1500
+      }
+    },
+    {
+      "isPage": false,
+      "name": "button",
+      "cfg": {
+        "text": "right",
+        "css": {
+          "height": 20,
+          "right": "20%",
+          "opacity": 0
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 1500
+      }
+    },
+    {
+      "isPage": true,
+      "name": "hobby"
+    },
+    {
+      "isPage": false,
+      "name": "caption",
+      "cfg": {
+        "text": "兴趣爱好",
+        "width": 500,
+        "height": 140,
+        "center": true,
+        "css": {
+          "top": 20,
+          "opacity": 0,
+          "z-index": 2
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 500
+      }
+    },
+    {
+      "isPage": false,
+      "name": "myAvator",
+      "cfg": {
+        "type": "avator",
+        "width": 300,
+        "height": 300,
+        "bg": "#30A7AB",
+        "aPhoto": "img/avator.png",
+        "aIcon": "img/avator_icon.png",
+        "center": true,
+        "css": {
+          "margin": "auto",
+          "top": 0,
+          "bottom": 0,
+          "opacity": 0,
+          "z-index": 3
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 500
+      }
+    },
+    {
+      "isPage": false,
+      "name": "hobbys",
+      "cfg": {
+        "type": "point",
+        "width": 200,
+        "height": 200,
+        "data": [
+          {
+            "name": "篮球",
+            "per": 0.4,
+            "color": "rgb(255,118,118)",
+            "top": "130%",
+            "left": "-58%"
+
+          },
+          {
+            "name": "唱歌",
+            "per": 0.2,
+            "color": "#3F51B5",
+            "left": 0,
+            "top": "25%",
+            "left": "-80%"
+
+          },
+          {
+            "name": "看书",
+            "per": 0.3,
+            "color": "#4CAF50",
+            "left": "60%",
+            "top": "-100%",
+            "opacity": 0
+          },
+          {
+            "name": "动漫",
+            "per": 0.3,
+            "color": "#FF5722",
+            "left": "130%",
+            "top": "50%",
+            "opacity": 0
+          },
+          {
+            "name": "",
+            "per": 0.1,
+            "color": "#e8eebe",
+            "left": "-39%",
+            "top": "-74%"
+          },
+          {
+            "name": "",
+            "per": 0.02,
+            "color": "#e8cb5f",
+            "left": "128%",
+            "top": "-9%"
+          },
+          {
+            "name": "",
+            "per": 0.08,
+            "color": "#673ab7",
+            "left": "87%",
+            "top": "150%"
+          },
+          {
+            "name": "",
+            "per": 0.05,
+            "color": "#CDDC39",
+            "left": "-62%",
+            "top": "97%"
+          }
+        ],
+        "css": {
+          "margin": "auto",
+          "top": 0,
+          "bottom": 0,
+          "opacity": 0
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "center": true,
+        "delay": 1000
+      }
+    },
+    {
+      "isPage": true,
+      "name": "contact"
+    },
+    {
+      "isPage": false,
+      "name": "caption",
+      "cfg": {
+        "text": "联系方式",
+        "width": 500,
+        "height": 140,
+        "center": true,
+        "css": {
+          "top": 20,
+          "opacity": 0,
+          "z-index": 2
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 500
+      }
+    },
+    {
+      "isPage": false,
+      "name": "myAvator",
+      "cfg": {
+        "type": "avator",
+        "width": 300,
+        "height": 300,
+        "bg": "#30A7AB",
+        "aPhoto": "img/avator.png",
+        "aIcon": "img/avator_icon.png",
+        "center": true,
+        "css": {
+          "top": 130,
+          "opacity": 0
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 500
+      }
+    },
+    {
+      "isPage": false,
+      "name": "contactWay",
+      "center": true,
+      "cfg": {
+        "html": "<div><i class='iconfont icon-tel'></i> 136-3126-0171</div>",
+        "text": "",
+        "css": {
+          "width": "80%",
+          "height": 180,
+          "opacity": 0,
+          "left": "10%",
+          "top": 315
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 1000
+      }
+    },
+    {
+      "isPage": false,
+      "name": "contactWay",
+      "center": true,
+      "cfg": {
+        "html": "<div><i class='iconfont icon-mail'></i> 353016313@qq.com</div>",
+        "text": "",
+        "css": {
+          "width": "80%",
+          "height": 180,
+          "opacity": 0,
+          "left": "10%",
+          "top": 350
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 1000
+      }
+    },
+    {
+      "isPage": false,
+      "name": "contactWay",
+      "center": true,
+      "cfg": {
+        "html": "<div><i class='iconfont icon-github'></i> github.com/sexyHuang</div>",
+        "text": "",
+        "css": {
+          "width": "80%",
+          "height": 180,
+          "opacity": 0,
+          "left": "10%",
+          "top": 385
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 1000
+      }
+    },
+    {
+      "isPage": false,
+      "name": "backtop",
+      "center": true,
+      "cfg": {
+        "html": "<i class='iconfont icon-back-top'></i>",
+        "text": "",
+        "css": {
+          "opacity": 0,
+          "right": "5%",
+          "bottom": "5%"
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 1000,
+        "onclick": "$.fn.fullpage.moveTo(1);"
+      }
+    },
+    {
+      "isPage": false,
+      "name": "download",
+      "center": true,
+      "cfg": {
+        "html": "<a href='file/sexy_resume.pdf' target='_blank' download='sexy_resume.pdf' class='iconfont icon-download'>下载纸质版简历</a>",
+        "text": "",
+        "css": {
+          "opacity": 0,
+          "left": "5%",
+          "bottom": "5%"
+        },
+        "animateIn": {
+          "opacity": 1
+        },
+        "animateOut": {
+          "opacity": 0
+        },
+        "delay": 1000
+      }
+    }
+  ]
+}
+
