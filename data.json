@@ -250,7 +250,7 @@
             "per": 0.4,
             "color": "#f68535",
             "rotate": "-10",
-            "zIndex": "2"
+            "zIndex": 2
           },
           {
             "name": "技能",
@@ -283,8 +283,8 @@
           "fontSize": "15px"
         },
         "animateIn": {
-          "opacity": 1,
-          "zIndex": 3
+          "opacity": 1
+
         },
         "animateOut": {
           "opacity": 0
@@ -1024,15 +1024,15 @@
     {
       "isPage": false,
       "name": "contactWay",
-      "center": true,
+
       "cfg": {
+        "width": 450,
+        "height": 90,
+        "center": true,
         "html": "<div><i class='iconfont icon-tel'></i> 136-3126-0171</div>",
         "text": "",
         "css": {
-          "width": "80%",
-          "height": 180,
           "opacity": 0,
-          "left": "10%",
           "top": 315
         },
         "animateIn": {
@@ -1047,15 +1047,15 @@
     {
       "isPage": false,
       "name": "contactWay",
-      "center": true,
+
       "cfg": {
+        "center": true,
+        "width": 450,
+        "height": 90,
         "html": "<div><i class='iconfont icon-mail'></i> 353016313@qq.com</div>",
         "text": "",
         "css": {
-          "width": "80%",
-          "height": 180,
           "opacity": 0,
-          "left": "10%",
           "top": 350
         },
         "animateIn": {
@@ -1070,15 +1070,15 @@
     {
       "isPage": false,
       "name": "contactWay",
-      "center": true,
+
       "cfg": {
         "html": "<div><i class='iconfont icon-github'></i> github.com/sexyHuang</div>",
         "text": "",
+        "width": 450,
+        "height": 90,
+        "center": true,
         "css": {
-          "width": "80%",
-          "height": 180,
           "opacity": 0,
-          "left": "10%",
           "top": 385
         },
         "animateIn": {

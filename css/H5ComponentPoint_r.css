@@ -7,6 +7,8 @@
     -webkit-transform: rotate(0deg);
     transform-origin: 275% 50%;
     -webkit-transform-origin:  275% 50%;
+    opacity: 1;
+    -webkit-opacity:1;
 }
 .h5_component_point_r .per {
     font-size: 0;

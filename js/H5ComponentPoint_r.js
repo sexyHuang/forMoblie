@@ -27,10 +27,12 @@ var H5ComponentPoint_r = function (name, cfg) {
             $(item).css({
 
                 'transform': 'rotate(' + cfg.data[idx].rotate + 'deg)',
+                '-moz-transform': 'rotate(' + cfg.data[idx].rotate + 'deg)',
                 '-webkit-transform': 'rotate(' + cfg.data[idx].rotate + 'deg)'
             });
             $(item).find('.name').css({
                 'transform': 'rotate(' + (0 - cfg.data[idx].rotate) + 'deg)',
+                '-moz-transform': 'rotate(' + (0 - cfg.data[idx].rotate) + 'deg)',
                 '-webkit-transform': 'rotate(' + (0 - cfg.data[idx].rotate) + 'deg)'
             })
         });

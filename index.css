@@ -1,0 +1,644 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei";
+}
+
+.h5_page {
+    background-image: url(img/page_bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.h5_component {
+    z-index: 2;
+}
+
+.h5_component_name_myName i {
+    color: black;
+}
+
+.h5_component_name_nav .point:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    background-color: inherit;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    opacity: 0.8;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    z-index: 0;
+}
+
+.h5_component_name_nav .point.click:before {
+    transform: scale(20);
+    -webkit-transform: scale(20);
+    opacity: 1;
+    z-index: -1;
+}
+
+.h5_component_name_tip {
+    height: 0;
+    transition: all 1s 1s;
+    -webkit-transition: all 1s 1s;
+    animation: upDown 2s 2s infinite;
+    -webkit-animation: upDown 2s 2s infinite;;
+}
+
+.h5_component_name_tip.h5_component_base_load {
+    height: auto;
+    padding: 40px 0 10px;
+}
+
+@keyframes upDown {
+    0% {
+        padding-top: 40px;
+        transform: rotate(0deg);
+    }
+    15% {
+        padding-top: 35px;
+        transform: rotate(3deg);
+    }
+    25% {
+        padding-top: 40px;
+        transform: rotate(-4deg);
+    }
+    35% {
+        padding-top: 35px;
+        transform: rotate(3deg);
+    }
+    45% {
+        padding-top: 38px;
+        transform: rotate(-2deg);
+    }
+    50% {
+        padding-top: 35px;
+        transform: rotate(1deg);
+    }
+    65% {
+        padding-top: 38px;
+        transform: rotate(-1deg);
+    }
+    75% {
+        padding-top: 40px;
+        transform: rotate(1deg);
+    }
+    85% {
+        padding-top: 40px;
+        transform: rotate(-2deg);
+    }
+}
+
+@-webkit-keyframes upDown {
+    0% {
+        padding-top: 40px;
+        -webkit-transform: rotate(0deg);
+    }
+    15% {
+        padding-top: 35px;
+        -webkit-transform: rotate(3deg);
+    }
+    25% {
+        padding-top: 40px;
+        -webkit-transform: rotate(-4deg);
+    }
+    35% {
+        padding-top: 35px;
+        -webkit-transform: rotate(3deg);
+    }
+    45% {
+        padding-top: 38px;
+        -webkit-transform: rotate(-2deg);
+    }
+    50% {
+        padding-top: 35px;
+        -webkit-transform: rotate(1deg);
+    }
+    65% {
+        padding-top: 38px;
+        -webkit-transform: rotate(-1deg);
+    }
+    75% {
+        padding-top: 40px;
+        -webkit-transform: rotate(1deg);
+    }
+    85% {
+        padding-top: 40px;
+        -webkit-transform: rotate(-2deg);
+    }
+}
+
+.h5_component_name_caption {
+    background-image: url(img/caption.png);
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.h5_component_name_click_tip:after {
+    content: '';
+    border: 5px solid transparent;
+    border-top: 10px solid #6482ff;
+    position: absolute;
+    bottom: -14px;
+    right: 20px;
+}
+
+.h5_component_name_click_tip {
+    animation: float 1.5s ease-in-out 3s infinite;
+    -webkit-animation: float 1.5s ease-in-out 3s infinite;;
+}
+
+.h5_component_name_text {
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+
+.h5_component_name_text div {
+    margin-left: 20px;
+    color: white;
+}
+
+.h5_component_name_text .label {
+    display: inline-block;
+    width: 75px;
+    font-weight: bold;
+    color: black;
+}
+
+.h5_component_name_else_left, .h5_component_name_else_right {
+    border-radius: 25px;
+}
+
+.h5_component_name_else_left {
+    background-image: url(img/jnu_logo.png);
+    background-size: 40%;
+    background-position: 20px 40px;
+    background-repeat: no-repeat;
+}
+
+.h5_component_name_else_left:before {
+    content: '';
+    border-right: 20px solid transparent;
+    border-bottom: 83px solid transparent;
+    border-left: 23px solid #e8cb5f;
+    border-top: 83px solid #e8cb5f;
+    position: absolute;
+    top: 54%;
+    right: 135px;
+    transform: rotate(56deg);
+    -webkit-transform: rotate(56deg);
+}
+
+.h5_component_name_else_left .big {
+    display: inline-block;
+    margin: 5px 15px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.5s linear 0.5s;
+    -webkit-transition: all 0.5s linear 0.5s;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+}
+
+.h5_component_name_else_left.h5_component_base_load .big {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+
+.h5_component_name_else_left .school {
+    display: inline-block;
+    width: 0;
+    white-space: nowrap;
+    position: absolute;
+    left: 55%;
+    top: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+    color: #e74f4d;
+    font-size: 25px;
+
+}
+
+.h5_component_name_else_left div {
+    overflow: hidden;
+    position: absolute;
+    left: 146px;
+    bottom: 30px;
+    width: 0;
+    height: 20px;
+    transition: width 1s linear 2s;
+    -webkit-transition: width 1s linear 2s;
+}
+
+.h5_component_name_else_left.h5_component_base_load .school {
+    transition: width 1s linear 1s;
+    -webkit-transition: width 1s linear 1s;
+    width: 100px;
+
+}
+
+.h5_component_name_else_left.h5_component_base_load div {
+    width: 115px;
+}
+
+.h5_component_name_else_right {
+    perspective: 300;
+    -webkit-perspective: 300;
+}
+
+.h5_component_name_else_right .job {
+    margin: 10px 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.h5_component_name_else_right .job .big {
+    font-size: 25px;
+    font-weight: bold;
+    color: #e74f4d;
+/ / position: absolute;
+}
+
+.h5_component_name_else_right .pos {
+    width: 171px;
+    height: 133px;
+    background-image: url('img/guangdong.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40px;
+    left: 108px;
+    transform: rotateX(44deg);
+    -webkit-transform: rotateX(44deg);
+}
+
+.h5_component_name_else_right > .big {
+    font-size: 21px;
+    font-weight: bold;
+    position: absolute;
+    top: 80px;
+    left: 32px;
+    z-index: 2;
+}
+
+.h5_component_name_else_right > .big:after {
+    content: 'PS:要是在珠三角就再好不过了~';
+    white-space: nowrap;
+    font-size: 14px;
+    position: absolute;
+    color: #eee;
+    top: 64px;
+    left: -277px;
+    overflow: hidden;
+    width: 201px;
+
+}
+
+.h5_component_name_else_right.h5_component_base_load > .big:after {
+    animation: piaoGuo 5s linear 1s infinite;
+    -webkit-animation: piaoGuo 5s linear 1s infinite;
+
+}
+
+@keyframes piaoGuo {
+    0% {
+        left: -277px;
+    }
+    30% {
+        left: 10px;
+    }
+    60% {
+        left: 10px;
+        width: 201px;
+    }
+    70% {
+        left: 54px;
+        width: 201px;
+    }
+    100% {
+        left: 252px;
+        width: 0;
+    }
+}
+
+@-webkit-keyframes piaoGuo {
+    0% {
+        left: -277px;
+    }
+    30% {
+        left: 10px;
+    }
+    60% {
+        left: 10px;
+        width: 201px;
+    }
+    70% {
+        left: 54px;
+        width: 201px;
+    }
+    100% {
+        left: 252px;
+        width: 0;
+    }
+}
+
+.h5_component_name_else_right .pos .place {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: 27%;
+    left: 39%;
+
+}
+
+.h5_component_name_else_right .pos .place:after {
+    content: "\e603";
+    color: #0062e0;
+    font-weight: normal;
+    font-family: "iconfont" !important;
+    font-size: 35px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 0;
+    top: -21px;
+    transform: rotateX(44deg);
+    -webkit-transform: rotateX(44deg);
+    animation: float1 1s ease-in-out infinite;
+    -webkit-animation: float1 1s ease-in-out infinite;
+}
+
+.h5_component_name_else_right:before {
+    content: '';
+    border-left: 23px solid #99C0FF;
+    border-bottom: 120px solid transparent;
+    border-right: 23px solid transparent;
+    border-top: 120px solid #99C0FF;
+    position: absolute;
+    top: 86%;
+    left: 50px;
+    transform: rotate(-9deg);
+    -webkit-transform: rotate(-9deg);
+}
+
+.h5_component_name_desk {
+
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition: all 0.5s
+}
+
+.h5_component_name_work_box {
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: 20% 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #e8eebe;
+}
+
+.h5_component_name_work_box .title {
+    position: absolute;
+    width: 80%;
+    padding: 5px 0;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: -30px;
+    background-color: #fcd445;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.h5_component_name_work_box .title:before {
+    content: '';
+    position: absolute;
+    margin-left: -8px;
+    left: 50%;
+    top: calc(100% + 5px);
+    border: 8px solid transparent;
+    border-top: 8px solid black;
+}
+
+.h5_component_name_work_box .title:after {
+    content: '\e605';
+    font-family: "iconfont" !important;
+    font-size: 30px;
+    color: #e74f4d;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 2px;
+    top: -1px;
+}
+
+.h5_component_name_work_box:nth-child(2) .title:after {
+    content: '\e604';
+    top: -3px;
+}
+
+.h5_component_name_work_box:nth-child(3) .title:after {
+    content: '\e60a';
+    top: 0px;
+}
+
+.h5_component_name_work_box:nth-child(4) .title:after {
+    content: '\e608';
+    top: -3px;
+}
+
+.h5_component_name_work_box:nth-child(4):before {
+    content: '\e609';
+    font-family: "iconfont" !important;
+    font-size: 154px;
+    color: #e8cb5f;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: -4%;
+    left: 50%;
+    margin-left: -77px;
+}
+
+.h5_component_name_work_box .link {
+    position: absolute;
+    bottom: 5%;
+    left: 4%;
+    font-size: 13px;
+}
+
+.h5_component_name_work_box .text {
+    font-size: 12px;
+    color: #9da6ae;
+    position: absolute;
+    top: 17%;
+    right: 4%;
+    width: 22%;
+}
+
+.h5_component_name_work_box .text span {
+    font-size: 15px;
+    color: black;
+}
+
+.h5_component_name_work_box:nth-child(4) .text {
+    width: 100%;
+    height: 70px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+
+}
+
+.h5_component_name_work_box:nth-child(4) .link {
+    position: static;
+    font-size: 20px;
+    line-height: 40px;
+
+}
+
+.h5_component_name_button {
+    font-size: 0;
+    top: 200px
+}
+
+.h5_component_name_button.icon-left {
+}
+
+.h5_component_name_button:before {
+    font-size: 54px;
+    color: rgb(179, 141, 6);
+}
+
+.h5_component_name_hobbys .per {
+    font-size: 0;
+}
+.h5_component_name_hobbys.h5_component_point_load .point:after{
+    content: '';
+    text-indent: -999px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: inherit;
+    position: absolute;
+
+    opacity: 0.5;
+    -webkit-opacity:0.5;
+    animation: breathe 3s infinite ease-in-out .5s;
+    -webkit-animation: breathe 3s infinite ease-in-out .5s;
+    -moz-animation: breathe 3s infinite ease-in-out .5s;
+    -o-animation: breathe 3s infinite ease-in-out .5s;
+    z-index: 1;
+}
+
+.h5_component_name_contactWay {
+    font-size: 15px;
+    color: #607D8B;
+}
+.h5_component_name_contactWay i {
+    display: inline-block;
+    color: #795548;
+    width: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+.h5_component_name_download a {
+    color: #30a7ab;
+    font-size: 15px;
+}
+.h5_component_name_download a:before {
+    font-size: 20px;
+    margin-right: 5px;
+}
+.h5_component_name_backtop i {
+    font-size: 35px;
+}
+.h5_component_name_backtop {
+    animation: updown 1s infinite;
+    -webkit-animation: updown 1s infinite;
+}
+
+@keyframes updown {
+    0% {
+        bottom: 5%;
+    }
+
+    50% {
+        bottom: 6%;
+    }
+}
+@-webkit-keyframes updown {
+    0% {
+        bottom: 5%;
+    }
+
+    50% {
+        bottom: 6%;
+    }
+}
+@keyframes float {
+    0% {
+        top: 240px
+    }
+
+    50% {
+        top: 245px
+    }
+
+}
+
+@-webkit-keyframes float {
+    0% {
+        top: 240px
+    }
+
+    50% {
+        top: 245px
+    }
+
+}
+
+@keyframes float1 {
+    0% {
+        top: -21px
+    }
+
+    50% {
+        top: -28px
+    }
+}
+
+@-webkit-keyframes float1 {
+    0% {
+        top: -21px
+    }
+
+    50% {
+        top: -28px
+    }
+}

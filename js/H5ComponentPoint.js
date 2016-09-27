@@ -36,9 +36,9 @@ var H5ComponentPoint = function (name, cfg) {
         if (item.color) {
             point.css('background-color', item.color);
         }
-        if(item.zIndex) {
+       /* if(item.zIndex) {
             point.css('z-index', item.zIndex);
-        }
+        }*/
         point.css({'transition':'all 1s '+idx*.5+'s',
                     '-moz-transition':'all 1s '+idx*.5+'s',
                     '-webkit-transition':'all 1s '+idx*.5+'s',
